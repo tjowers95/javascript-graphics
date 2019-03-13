@@ -2,7 +2,7 @@ export const toAbs = function(e){
   const p = pos(e)
   e.style.position = 'absolute'
   e.style.top = p.y + 'px'
-  e.style.bottom = p.x + 'px'
+  e.style.left = p.x + 'px'
   return pos(e)
 }
 
