@@ -16,5 +16,10 @@ export const pos = function(e){
 }
 
 export const getAncestors = function(e){
-
+  let ptr = e, a = []
+  while(ptr.parentElement){
+    a.push(ptr.parentElement)
+    ptr = ptr.parentElement
+  }
+  return a
 }
